@@ -1,0 +1,15 @@
+
+# Ask the user for input
+n = int(input("Enter a positive integer n: "))
+
+# Initialize variables
+sum_of_integers = 0
+current_number = 0
+
+# Use a while loop to calculate the sum
+while current_number <= n:
+    sum_of_integers += current_number
+    current_number += 1
+
+# Display the result
+print(f"The sum of all integers from 0 to {n} is {sum_of_integers}")
