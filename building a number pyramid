@@ -1,0 +1,14 @@
+def pascal(n):
+    t=[]
+    for i in range(n):
+        row=[1]
+        if (i>0):
+            prev_row = t[i-1]
+            for j in range(1,i):
+                row.append(prev_row[j-1]+prev_row[j])
+            row.append(1)
+        t.append(row)
+    for row in t:
+        print(row)
+i=int(input("num: "))
+pascal(i)
