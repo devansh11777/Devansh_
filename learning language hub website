@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .language-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .language-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .language-card:hover {
+            transform: scale(1.05);
+        }
+
+        .about-us {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .testimonials {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .contact-us {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Add style for the test section */
+        .test-section {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+        }
+
+        /* Style for the "Start Test" button */
+        .test-section button {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Language Learning Hub</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to our Creative Language Learning Platform</h2>
+        <p>Start your language learning journey here! Explore different languages and immerse yourself in a world of linguistic diversity.</p>
+
+        <div class="language-container">
+            <div class="language-card" onclick="showDetails('Spanish')">
+                <h3>Spanish</h3>
+                <p>¡Hola! Learn the beautiful language of Spanish with our interactive lessons and practice sessions.</p>
+                <ul>
+                    <li>Step 1: Start with basic greetings and common phrases.</li>
+                    <li>Step 2: Dive into essential grammar rules.</li>
+                    <li>Step 3: Practice pronunciation with native speakers.</li>
+                    <li>Step 4: Explore Spanish literature and culture.</li>
+                </ul>
+                <!-- Test Section -->
+                <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('French')">
+                <h3>French</h3>
+                <p>Bonjour! Dive into the elegance of French language and culture through engaging exercises and conversations.</p>
+                <ul>
+                    <li>Step 1: Learn basic French expressions and greetings.</li>
+                    <li>Step 2: Master common phrases for daily communication.</li>
+                    <li>Step 3: Explore French cuisine and traditions.</li>
+                    <li>Step 4: Practice with French movies and music.</li>
+                </ul>
+                <!-- Test Section -->
+                <div class="test-section">
+                    <h4>Test Your French Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in French!</p>
+                    <button onclick="startTest('French')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('German')">
+                <h3>German</h3>
+                <p>Hallo! Explore the rich history and culture of the German language through our comprehensive learning program.</p>
+                <ul>
+                    <li>Step 1: Begin with German alphabet and pronunciation.</li>
+                    <li>Step 2: Study common phrases for travel and socializing.</li>
+                    <li>Step 3: Delve into German literature and philosophy.</li>
+                    <li>Step 4: Connect with native German speakers for conversation.</li>
+                </ul>
+                <!-- Test Section -->
+                <div class="test-section">
+                    <h4>Test Your German Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in German!</p>
+                    <button onclick="startTest('German')">Start Test</button>
+                </div>
+            </div>
+            <div class="language-card" onclick="showDetails('Italian')">
+                <h3>Italian</h3>
+                <p>Ciao! Immerse yourself in the beauty of the Italian language and culture with our engaging learning materials.</p>
+                <ul>
+                    <li>Step 1: Start with basic Italian greetings and expressions.</li>
+                    <li>Step 2: Explore Italian art, history, and music.</li>
+                    <li>Step 3: Practice conversational Italian with our interactive tools.</li>
+                    <li>Step 4: Delight in Italian cuisine and traditions.</li>
+                </ul>
+                     <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('Japanese')">
+                <h3>Japanese</h3>
+                <p>Konnichiwa! Embark on a journey to master the art of Japanese language and discover the beauty of its characters.</p>
+                <ul>
+                    <li>Step 1: Learn basic Japanese greetings and expressions.</li>
+                    <li>Step 2: Explore Japanese writing systems (Hiragana, Katakana, and Kanji).</li>
+                    <li>Step 3: Immerse yourself in Japanese pop culture and traditions.</li>
+                    <li>Step 4: Engage in conversations with native Japanese speakers.</li>
+                </ul>
+                     <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('Mandarin')">
+                <h3>Mandarin Chinese</h3>
+                <p>Nǐ hǎo! Dive into the richness of Mandarin Chinese and explore one of the most spoken languages in the world.</p>
+                <ul>
+                    <li>Step 1: Start with basic Mandarin greetings and tones.</li>
+                    <li>Step 2: Learn essential Chinese characters and vocabulary.</li>
+                    <li>Step 3: Discover Chinese traditions, art, and philosophy.</li>
+                    <li>Step 4: Practice Mandarin with native speakers for fluency.</li>
+                </ul>
+                      <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('Russian')">
+                <h3>Russian</h3>
+                <p>Zdravstvuyte! Delve into the fascinating world of the Russian language and discover its rich history and literature.</p>
+                <ul>
+                    <li>Step 1: Begin with basic Russian greetings and expressions.</li>
+                    <li>Step 2: Explore the Cyrillic alphabet and pronunciation.</li>
+                    <li>Step 3: Immerse yourself in Russian literature and folklore.</li>
+                    <li>Step 4: Connect with Russian speakers for language exchange.</li>
+                </ul>
+                     <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+
+            <div class="language-card" onclick="showDetails('Arabic')"><h3>Arabic</h3>
+                <p>Marhaban! Explore the beauty and complexity of the Arabic language and immerse yourself in its rich cultural heritage.</p>
+                <ul>
+                    <li>Step 1: Start with basic Arabic greetings and common expressions.</li>
+                    <li>Step 2: Learn the Arabic script and basic grammar rules.</li>
+                    <li>Step 3: Explore classical and contemporary Arabic literature.</li>
+                    <li>Step 4: Engage in conversations with native Arabic speakers for fluency.</li>
+                </ul>
+                     <div class="test-section">
+                    <h4>Test Your Spanish Knowledge</h4>
+                    <p>Challenge yourself with a quick test to reinforce what you've learned in Spanish!</p>
+                    <button onclick="startTest('Spanish')">Start Test</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Language Learning Hub, your go-to platform for exploring and mastering languages from around the world. Our mission is to make language learning engaging, interactive, and accessible to everyone.</p>
+    </div>
+
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Language Learning Hub has transformed my language learning experience. The interactive lessons and diverse content have made the journey enjoyable and effective!" - Sarah</p>
+        <p>"I never thought learning a new language could be this fun. The step-by-step approach and cultural insights provided by Language Learning Hub have been invaluable." - Alex</p>
+    </div>
+
+    <footer>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? Reach out to us!</p>
+            <p>Email: info@languagelearninghub.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+
+        <p>&copy; 2023 Language Learning Hub</p>
+    </footer>
+
+    <script>
+        function showDetails(language) {
+            alert(Explore more about ${language}! (Note: This is a placeholder for further interactivity));
+        }
+
+        function startTest(language) {
+            alert(Get ready for the ${language} test! (Note: This is a placeholder for the test functionality));
+        }
+    </script>
+    <script>
+    function showDetails(language) {
+        alert(Explore more about ${language}! (Note: This is a placeholder for further interactivity));
+    }
+
+    function startTest(language) {
+        if (language === 'Spanish') {
+            window.open('https://www.esl-languages.com/en/online-language-tests/spanish-test/start-test', '_blank');
+        } else {
+            alert(Get ready for the ${language} test! (Note: This is a placeholder for the test functionality));
+        }
+    }
+      </script>
+</body>
+</html>
